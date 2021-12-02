@@ -258,6 +258,9 @@ span.color-second {
 .footer {
   background-color: var(--secondary-bg-color);
   outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 60px;
 }
 .logo {
   display: inline-block;
@@ -266,9 +269,19 @@ span.color-second {
   margin-top: 60px;
   margin-bottom: 20px;
 }
-
+.adress-footer .list {
+  display: block;
+  margin-left: 0;
+  
+}
 .list .list-adress {
   color: var(--color-button);
+}
+.list .list-adress.list-item:not(:first-child) {
+  margin-left: 0;
+  margin-top: 9px;
+}
+
 }
 .list .list-adress:hover {
   color: var(--accent-color);
