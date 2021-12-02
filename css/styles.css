@@ -17,6 +17,9 @@
   --bg-card-portfolio: #ffffff;
 }
 .page {
+  width: 1200px;
+  margin: auto;
+  padding: auto;
   color: var(--primery-text-color);
   background-color: var(--primery-bg-color);
   font-family: roboto, sans-serif;
@@ -24,9 +27,30 @@
   font-size: 14px;
   line-height: 1.714;
 }
+.container {
+  outline: 2px solid tomato;
+}
 /* header */
+
+.container .list {
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  
+}
+.container .list-item { 
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 .list li {
   list-style: none;
+  margin-left: 0;
+}
+ul {
+  padding-left: 0;
+}
+.container .list-item+.list-item {
+  margin-left: 50px;
 }
 span.color-logo {
   color: #2196f3;
@@ -55,12 +79,23 @@ span.color-studio {
   letter-spacing: 0.02em;
 }
 /* main */
+h1,h2,h3,h4,h5,h6,ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}  
+  /* hero-container */
+
+.container .hero {
+  text-align: center;
+ 
+}
 .hero .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--color-hero);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
@@ -73,12 +108,26 @@ span.color-studio {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  margin-bottom: 200px;
 }
+
 /* background color pages */
 .instruments,
 .work,
 .example-work {
   background: var(--primery-bg-color);
+}
+section {
+  outline: 2px solid tomato;
+  padding-top: 94px;
+  padding-bottom: 94px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+/* container-instruments */
+.instruments .list {
+   margin-bottom: 0;
 }
 .list .list-title {
   color: #212121;
@@ -86,13 +135,31 @@ span.color-studio {
   line-height: 1.143;
   text-transform: uppercase;
 }
+.work.section {
+  padding-top: 0;
+}
+.work .title,
+.team .title {
+  margin-bottom: 50px;
+}
+.work .list-item+.list-item {
+  margin-left: 30px;
+}
+.work .list {
+  display: flex;
+}
 .hero {
   background-color: var(--secondary-bg-color);
-  width: 1600px;
+
+}
+.list-item .list-title {
+  margin-bottom: 10px;
 }
 .list .list-text {
   color: var(--secondary-text-color);
   font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .team {
   background: #f5f4fa;
@@ -170,7 +237,16 @@ span.color-second {
 }
 .footer {
   background-color: var(--secondary-bg-color);
+  outline: 2px solid tomato;
 }
+.logo {
+  display: inline-block;
+}
+.footer .logo {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
 .list .list-adress {
   color: var(--color-button);
 }
