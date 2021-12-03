@@ -19,7 +19,7 @@
 .page {
   width: 1200px;
   margin: auto;
-  padding: auto;
+  padding-right: auto;
   color: var(--primery-text-color);
   background-color: var(--primery-bg-color);
   font-family: roboto, sans-serif;
@@ -27,15 +27,17 @@
   font-size: 14px;
   line-height: 1.714;
 }
-.container {
+.container,
+.container-header {
   outline: 2px solid tomato;
 }
 /* header */
 .container-header {
   display: flex;
   align-items: center;
+  padding-bottom: 25px;
+  padding-top: 24px;
 }
-
 .nav-header {
   padding-left: 15px;
   margin-top: 0;
@@ -43,7 +45,7 @@
   display: flex;
   align-items: center;
 }
-.container .list-link { 
+.nav-header .list-link { 
   margin-top: 32px;
   margin-bottom: 32px;
 }
@@ -58,7 +60,7 @@
   margin-left: auto;
   padding-right: 15px;
 }
-.list .list-item+.list-item {
+.list .nav-list+.nav-list {
   margin-left: 50px;
 }
 span.color-logo {
@@ -95,7 +97,7 @@ h1,h2,h3,h4,h5,h6,ul {
 }  
   /* hero-container */
 
-.container .hero {
+.hero .container {
   text-align: center;
  
 }
@@ -119,6 +121,8 @@ h1,h2,h3,h4,h5,h6,ul {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   
 }
 
@@ -130,19 +134,16 @@ h1,h2,h3,h4,h5,h6,ul {
 }
 section {
   outline: 2px solid tomato;
-  padding-top: 94px;
-  padding-bottom: 94px;
-  padding-left: 10px;
-  padding-right: 10px;
-
+  padding: 94px 10px;
 }
 /* container-instruments */
 .instruments .list {
    margin-bottom: 0;
-   align-items: center;
+   /* align-items: center; */
 }
+
 .list .list-title {
-  color: #212121;
+  color: var(--primery-text-color);
   font-weight: 700;
   line-height: 1.143;
   text-transform: uppercase;
@@ -155,7 +156,8 @@ section {
   margin-bottom: 50px;
 }
 .work .list-item+.list-item,
-.team .list-item+.list-item {
+.team .list-item+.list-item,
+.instruments .instruments-list+.instruments-list {
   margin-left: 30px;
 }
 .work .list {
@@ -196,6 +198,7 @@ section {
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
+  margin-bottom: 10px;
 }
 .list .profession {
   color: var(--secondary-text-color);
@@ -203,6 +206,8 @@ section {
   font-size: 16px;
   line-height: 1.187;
   text-align: center;
+  margin-bottom: 30px;
+  margin-top: 0 ;
 }
 /* Portfolio */
 .list .button {
@@ -272,7 +277,6 @@ span.color-second {
 .adress-footer .list {
   display: block;
   margin-left: 0;
-  
 }
 .list .list-adress {
   color: var(--color-button);
