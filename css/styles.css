@@ -99,12 +99,12 @@ h1,h2,h3,h4,h5,h6,ul {
   margin-top: 0;
   margin-bottom: 0;
 }  
-  /* hero-container */
 .hero .container {
   text-align: center;
+  height: 600px;
+  padding-top: 200px;
 }
 .hero .hero-title {
-  margin-top: 0;
   margin-bottom: 30px;
   color: var(--color-hero);
   font-weight: 900;
@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6,ul {
   text-transform: uppercase;
 }
 .hero .button {
-  margin-bottom: 0;
+  margin-bottom: 200px;
   background-color: var(--accent-color);
   color: var(--color-button);
   width: 200px;
@@ -179,6 +179,7 @@ h1,h2,h3,h4,h5,h6,ul {
   background: #f5f4fa;
 }
 .team .list-item {
+  background-color:var(--primery-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
   0px 1px 1px rgba(0, 0, 0, 0.14),
   0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -190,6 +191,9 @@ h1,h2,h3,h4,h5,h6,ul {
   font-size: 36px;
   line-height: 1.166;
   text-align: center;
+}
+.list-name {
+  margin-top: 30px;
 }
 .list .list-name {
   font-weight: 500;
